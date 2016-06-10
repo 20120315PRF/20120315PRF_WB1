@@ -1,0 +1,422 @@
+/**
+* Common elements for all webpage
+**/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "josefin-sans";
+}
+
+/** Hide elements */
+.hidden {
+    display: none;
+}
+
+/*
+** 
+**The header navigation 
+**
+*/
+nav {
+    min-height: 100px !important;
+    color: #333;
+    padding: 15px;
+}
+
+nav .container{
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    /*background-color: red;*/
+}
+
+.navbar-header{
+    /** logo */
+    /*background-color: green;*/
+}
+
+
+.navbar-nav {
+    /** options */
+    /*background-color: blueviolet;*/
+    min-height: 75px;
+    padding-bottom: 15px; /** To fix the height when responsive */
+    float: right;
+}
+
+.in {
+    background-color: #F2F1EC;
+}
+
+.in .navbar-nav{
+    /** re-center links when collapse menu*/
+    width: 100%;
+    margin: auto;
+}
+
+/** Options for the menu */
+.nav-option a{
+    color: #333 !important;
+    
+    
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0 20px !important;
+}
+
+.nav-option a:hover{
+    background-color: none !important;
+    text-decoration: none;
+    color: darkred !important;
+    border-bottom: solid 1px #DC143C;
+    margin-bottom: -1px;
+}
+
+#logo {
+    min-height: 75px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#logo img{
+    height: 75px;
+    max-height: 75px;
+}
+
+
+/**
+**
+** HEADER SECTION
+**
+*/
+header {
+    /*background-image: url('../img/background-img.jpg');*/
+    background-image: url('../img/background-img-7.jpg');
+    background-size: cover;
+    min-height: 650px;
+    min-height: 110%;
+    /** Justify on center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+header .header-offset{
+    padding-top: 105px; /** nav height */
+}
+
+header .content{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+header .content h1{
+    font-size: 5rem;
+    color: #DC143C;
+}
+
+#written-text{
+    min-height: 5rem; 
+    height: 5rem; 
+    font-size: 5rem;
+    margin-bottom: 40px;
+    color: #FF4530; 
+}
+
+/**
+**
+** ARTICLES
+**
+*/
+article {
+    min-height: 110%;
+}
+
+article[class="gold-article"]{
+    background-color: #F4A460;
+}
+
+article[class="white-article"]{
+    background-color: white;
+}
+
+article[class="semidark-article"]{
+    background-color: #333;
+    color: white;
+}
+
+article section {
+    margin: 0 auto;
+    width: 50%;
+}
+article section h1{
+    margin-top: 0px;
+    padding-top: 110px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/**
+*
+*   INFORMATION ARTICLE
+*
+**/
+.tab-panel{
+    margin: 0 auto;
+    width: 80%;
+}
+.tab-panel ul{
+    text-align: center;
+}
+.tab-panel ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 2em;
+}
+.tab-panel ul li a{
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+.tab-panel ul li a:hover{
+    font-size: 2em;
+    text-decoration: none;
+}
+.tab-panel ul li .selected{
+    border-bottom: solid 1px #DC143C;
+}
+
+/**
+*
+*   TECHONOLOGIES
+*
+**/
+article[id="technical"] section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#technical {
+    height: 80% !important;
+    min-height: 800px !important;
+    font-size: 1.5em;
+}
+
+#techonologies-items .left {
+    float: left;
+    width: 60%;
+}
+
+#techonologies-items .right {
+    float: right;
+    width: 40%;
+}
+
+#techonologies-items .left ul {
+    list-style: none;
+}
+#techonologies-items .left ul::after {
+    clear: both;
+}
+
+#techonologies-items .left ul li{
+    width: auto;
+    display: inline-block;
+}
+
+#techonologies-frame {
+    position: relative;
+    width: 40%;
+}
+#techonologies-frame p{
+    position: absolute;
+    margin: 0 auto;
+    top: 200px; 
+    left: 50%; 
+}
+
+
+
+/**
+*
+* TEAM ARTICLE
+*
+**/
+.team-profile{
+    min-height: 150px;
+    text-align: center;
+}
+
+.team-profile img{
+    diplay: inline-block;
+}
+
+.team-profile .team-profile-title{
+    font-weight: bold;
+}
+.team-profile .team-profile-title h2,p{
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.team-profile-links {
+    margin: 15px;
+}
+
+.team-profile-links ul li {
+    display: inline-block;
+    margin-right: 1em;
+    margin: .5em;
+    font-size: 1.5em;
+}
+
+.team-profile-links ul li a{
+    color: white;
+    background-color: #333;
+    padding: .2em;
+    border-radius: 5px;
+}
+.team-profile-links ul li a:hover{
+    background-color: #330;
+    padding: .2em;
+    border-radius: 5px;
+}
+
+
+
+/**
+**
+** FOOTER
+**
+*/
+footer{
+    min-height: 150px;
+    background-color: black;
+    color: white;
+}
+
+footer .container{
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer-links li {
+    margin-right: .5em;
+    font-size: 2em;
+}
+#footer-links i{
+    color: black;
+    background-color: white;
+    padding: .2em;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+}
+
+#footer-links  li:hover{
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+#footer-links  li{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+
+/**
+* ANY OTHER STYLE
+**/
+.capital-letter {
+    font-size: 6em;
+}
+
+/** link as red button  */
+a[class="red-btn"]{
+    color: white;
+    padding: 15px 15px;
+    background-color: #FF4530;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 900;
+     overflow: hidden;
+    white-space: nowrap;
+}
+a[class="red-btn"]:hover{
+    color: #333;
+    text-decoration: none;
+    border: solid 1px #FF4530;
+    background-color: white;
+    margin: -1px;
+}
+
+/** White line separator **/
+.white-line-separator{
+    border-bottom: solid 1px #F2F1EC;
+    margin: 0 auto;
+    width: 50%;
+}
+/** Red line separator */
+.red-line-separator{
+    border-bottom: solid 1px #DC143C;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/** Change the bkgnd color to white */
+.white-background{
+    background-color: #F2F1EC;
+}
+
+/** Center a div horizontally */
+.center-div {
+    margin: 0 auto;
+}
+
+/** Circular img */
+img[class="circular"] {
+    width: 140px;
+	height: 140px;
+	border-radius: 150px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+/**
+*
+*   list styles
+*
+*/
+.horizontally-list li{
+    display: inline-block;
+}
+.horizontally-list::after {
+    clear: both;
+}
+.nonstyle-list {
+    list-style: none;
+}
+
+
+/** Centered div */
+.centered-div{
+    margin: 0 auto;
+    width: 50%;
+}
