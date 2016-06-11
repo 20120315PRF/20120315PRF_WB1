@@ -1,0 +1,149 @@
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+#left-col{
+    width: 20%;
+    float: left;
+    background-color: black;
+    color: #DCDCDC;
+    position: fixed;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#right-col{
+    width: 80%;  
+    float: right;
+    background-color: white;
+}
+
+
+footer{
+    min-height: 200px;
+    max-height: 200px;
+    height: 200px;
+    
+    clear: both;
+    background-color: black;
+    color: white;
+    width: 80%;
+    float: right;
+    text-align: center;
+    color: #DCDCDC;
+}
+
+/** 
+    HEADER 
+*/
+.name-header {
+    padding: 2em;
+}
+
+
+
+/**
+    PROFILE SECTION
+*/
+.circular {
+    width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
+#profile.circular {
+        background: url('../img/profile-big.jpg') no-repeat;
+}
+
+#profile-section {
+    padding: 2em;
+}
+
+#profile-right {
+    float: right;
+    width: 60%;
+}
+
+#profile-right ul{
+    list-style: none;
+}
+#profile-right ul li{
+    margin-bottom: .5em;
+}
+#profile-right ul li a{
+    color: #DCDCDC;
+}
+
+#profile-left{
+    float: left;
+    text-align: center;
+    width: 40%;
+}
+#profile-left div{
+    margin: 0 auto;
+}
+
+/**
+    ICONS
+*/
+#profile-section i {
+    padding: .2em;
+    border: solid 1px none;
+    border-radius: 5px;
+    color: #333;
+    background-color: darkgrey;
+    font-size: 1.6em !important;
+}
+
+#profile-section .fa-envelope::before {
+    font-size: .85em;
+}
+
+#unknown-profile h1{
+    font-size: 5em;
+    text-align: center;
+}
+
+/**
+    COMMON STYLES
+**/
+.title-letter{
+    font-family: Arial;
+    font-size: 4em;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 0px auto;
+}
+
+.dark-pannel{
+    background-color: #333;
+    color: #DCDCDC;
+}
+
+/** Left modern table */
+.modern-table ul li{
+    list-style: none;
+    font-family: Arial;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+}
+/** Left modern table */
+.modern-table ul li a{
+    text-decoration: none;
+    color: #DCDCDC;
+}
+
+.modern-table .selected{
+    border-left: solid 4px red;
+}
+
+

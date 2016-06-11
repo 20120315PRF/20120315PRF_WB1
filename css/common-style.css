@@ -11,6 +11,10 @@ body {
     font-family: "josefin-sans";
 }
 
+#main-page{
+    height: 100%;
+}
+
 /** Hide elements */
 .hidden {
     display: none;
@@ -33,6 +37,7 @@ nav .container{
 }
 
 .navbar-default {
+    /*background-color: rgba(255,255,255, .3);*/
     background-color: transparent;
     border: none;
     /*background-color: red;*/
@@ -64,7 +69,7 @@ nav .container{
 
 /** Options for the menu */
 .nav-option a{
-    color: #333 !important;
+    color: white !important;
     
     
     font-size: 1.4em;
@@ -102,14 +107,14 @@ nav .container{
 */
 header {
     /*background-image: url('../img/background-img.jpg');*/
-    background-image: url('../img/background-img-7.jpg');
+    background-image: url('../img/background-img-10.jpg');
     background-size: cover;
     min-height: 650px;
     min-height: 110%;
     /** Justify on center */
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 header .header-offset{
@@ -131,7 +136,7 @@ header .content h1{
     height: 5rem; 
     font-size: 5rem;
     margin-bottom: 40px;
-    color: #FF4530; 
+    color: #CC8000; 
 }
 
 /**
@@ -215,12 +220,7 @@ article[id="technical"] section {
 
 #techonologies-items .left {
     float: left;
-    width: 60%;
-}
-
-#techonologies-items .right {
-    float: right;
-    width: 40%;
+    width: 100%;
 }
 
 #techonologies-items .left ul {
@@ -233,17 +233,6 @@ article[id="technical"] section {
 #techonologies-items .left ul li{
     width: auto;
     display: inline-block;
-}
-
-#techonologies-frame {
-    position: relative;
-    width: 40%;
-}
-#techonologies-frame p{
-    position: absolute;
-    margin: 0 auto;
-    top: 200px; 
-    left: 50%; 
 }
 
 
@@ -294,8 +283,6 @@ article[id="technical"] section {
     border-radius: 5px;
 }
 
-
-
 /**
 **
 ** FOOTER
@@ -328,7 +315,7 @@ footer .container{
 }
 
 #footer-links  li:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(20deg);
     transition: 0.7s;
 }
 #footer-links  li{
@@ -381,11 +368,10 @@ a[class="red-btn"]:hover{
 .white-background{
     background-color: #F2F1EC;
 }
-
-/** Center a div horizontally */
-.center-div {
-    margin: 0 auto;
+.white-background ul li a {
+    color: #333 !important;
 }
+
 
 /** Circular img */
 img[class="circular"] {
@@ -414,9 +400,13 @@ img[class="circular"] {
     list-style: none;
 }
 
-
-/** Centered div */
+/** Centered div horizontally */
 .centered-div{
     margin: 0 auto;
     width: 50%;
+}
+
+/** Center a div horizontally */
+.center-div {
+    margin: 0 auto;
 }

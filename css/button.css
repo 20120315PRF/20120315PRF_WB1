@@ -19,7 +19,7 @@
 }
 .small-btn:hover{
     text-decoration: none;
-    margin: -1px;
+    margin: -1px !important;
 }
 /** Green btn */
 .green-btn{
@@ -37,6 +37,7 @@
     background-color: white !important;
     color: #FF4530;
     border-color: #FF4530 !important;
+    
 }
 .red-btn:hover{
     color: white;

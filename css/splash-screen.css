@@ -1,0 +1,50 @@
+/** The splash screen */
+#splash-screen{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #333;
+}
+
+.align-center-vertically{
+    /** TODO: implement vertically align */
+    position:absolute;
+    top: 50%;
+    left: 25%;
+  
+}
+
+@keyframes expand-circle {
+    from {transform: scale(0.1); opacity: 1; border-width: 15px;}
+    to {transform: scale(1); opacity: 0; border-width: 2px;}
+}
+
+#splash-screen .circle-animated{
+  border-radius: 50px;
+  
+  /*-moz-border-image: -moz-linear-gradient(top, #FC913A 0%, #FF4E50 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #FC913A 0%, #FF4E50 100%);
+    border-image: linear-gradient(to bottom, #FC913A 0%, #FF4E50 100%);*/
+
+  border-style: solid;
+  border-width: 1px;
+  content: " ";
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  opacity: 0;
+    
+    /** Animation */
+  animation-name: expand-circle;
+  animation-duration: 1.5s;
+}
+
+
+.fadeIn-text {
+    display: none;
+}
+.fadeIn-text p{
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1em;
+}

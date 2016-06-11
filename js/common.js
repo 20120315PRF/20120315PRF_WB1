@@ -1,7 +1,7 @@
 /**
 * Write text on screen animated
 */
-var COLOSSEUM_TEXT = "Enter the Coliseum.";
+var COLOSSEUM_TEXT = "Be battle, my friend.";
 
 var counter = 0;
 function tipeText(text, idElement){
