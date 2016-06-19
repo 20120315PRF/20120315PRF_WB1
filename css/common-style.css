@@ -4,15 +4,18 @@
 
 html {
     height: 100%;
+    min-height: 100%;
 }
 
 body {
     height: 100%;
+    min-height: 100%;
     font-family: "josefin-sans";
 }
 
 #main-page{
     height: 100%;
+    min-height: 100%;
 }
 
 /** Hide elements */
@@ -28,7 +31,7 @@ body {
 nav {
     min-height: 100px !important;
     color: #333;
-    padding: 15px;
+    padding: 15px 0px;
 }
 
 nav .container{
@@ -37,21 +40,12 @@ nav .container{
 }
 
 .navbar-default {
-    /*background-color: rgba(255,255,255, .3);*/
     background-color: transparent;
     border: none;
-    /*background-color: red;*/
 }
-
-.navbar-header{
-    /** logo */
-    /*background-color: green;*/
-}
-
 
 .navbar-nav {
     /** options */
-    /*background-color: blueviolet;*/
     min-height: 75px;
     padding-bottom: 15px; /** To fix the height when responsive */
     float: right;
@@ -70,21 +64,20 @@ nav .container{
 /** Options for the menu */
 .nav-option a{
     color: white !important;
-    
-    
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
     margin-top: 25px;
-    padding: 0 20px !important;
+    padding: 0 1.5em !important;
+    border-bottom: solid 1px white;
 }
 
 .nav-option a:hover{
     background-color: none !important;
     text-decoration: none;
     color: darkred !important;
-    border-bottom: solid 1px #DC143C;
+    border-bottom: solid 4px #DC143C;
     margin-bottom: -1px;
 }
 
@@ -106,19 +99,12 @@ nav .container{
 **
 */
 header {
-    /*background-image: url('../img/background-img.jpg');*/
-    background-image: url('../img/background-img-10.jpg');
+    background-image: url('../img/background-img-13.jpg');
+    background-color: #333;
     background-size: cover;
     min-height: 650px;
-    min-height: 110%;
-    /** Justify on center */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header .header-offset{
-    padding-top: 105px; /** nav height */
+    height: 110%;
+    position: relative;
 }
 
 header .content{
@@ -134,9 +120,33 @@ header .content h1{
 #written-text{
     min-height: 5rem; 
     height: 5rem; 
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 40px;
-    color: #CC8000; 
+    color: #DC143C; 
+    font-weight: bold;
+}
+
+
+#link-list li{
+    padding: 1em 0em;
+    color: white;
+    list-style: none;
+}
+#link-list li i{
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.8em;
+   
+    
+    color: white;
+    padding: 1em;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+}
+#link-list li i:hover{
+   color: #DC143C;
 }
 
 /**
@@ -409,4 +419,24 @@ img[class="circular"] {
 /** Center a div horizontally */
 .center-div {
     margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fill-top-20 {
+    min-height: 125px;
+    padding-top: 125px;
 }
