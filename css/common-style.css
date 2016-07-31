@@ -29,9 +29,11 @@ body {
 **
 */
 nav {
-    min-height: 100px !important;
+    min-height: 100px;
     color: #333;
     padding: 15px 0px;
+    animation-name: grow-nav;
+    animation-duration: .1s;
 }
 
 nav .container{
@@ -76,8 +78,10 @@ nav .container{
 .nav-option a:hover{
     background-color: none !important;
     text-decoration: none;
-    color: darkred !important;
-    border-bottom: solid 4px #DC143C;
+    /*color: darkred !important;*/
+    /*border-bottom: solid 4px #DC143C;*/
+    color: #004C82 !important;
+    border-bottom: solid 4px #004C82;
     margin-bottom: -1px;
 }
 
@@ -100,7 +104,8 @@ nav .container{
 */
 header {
     background-image: url('../img/background-img-13.jpg');
-    background-color: #333;
+    /*background-color: #333;*/
+   /* background-color: #001F35; */
     background-size: cover;
     min-height: 650px;
     height: 110%;
@@ -162,8 +167,17 @@ article[class="gold-article"]{
     background-color: #F4A460;
 }
 
+article[class="blue-article"]{
+    background-color: #001F35;
+    color: #C9C9C9;
+}
+
 article[class="white-article"]{
     background-color: white;
+}
+
+article[class="semiwhite-article"]{
+    background-color: #C9C9C9;
 }
 
 article[class="semidark-article"]{
@@ -201,7 +215,7 @@ article section h1{
 }
 .tab-panel ul li a{
     font-size: 2em;
-    color: black;
+    color: #C9C9C9;
     text-decoration: none;
 }
 .tab-panel ul li a:hover{
@@ -300,8 +314,11 @@ article[id="technical"] section {
 */
 footer{
     min-height: 150px;
-    background-color: black;
-    color: white;
+    /*background-color: black;
+    color: white;*/
+    /*background-color: #363636;*/
+    background-color: #004C82;
+    color: #C9C9C9;
 }
 
 footer .container{
@@ -367,6 +384,12 @@ a[class="red-btn"]:hover{
     margin: 0 auto;
     width: 50%;
 }
+/** Black line separator **/
+.black-line-separator{
+    border-bottom: solid 1px black;
+    margin: 0 auto;
+    width: 50%;
+}
 /** Red line separator */
 .red-line-separator{
     border-bottom: solid 1px #DC143C;
@@ -377,9 +400,13 @@ a[class="red-btn"]:hover{
 /** Change the bkgnd color to white */
 .white-background{
     background-color: #F2F1EC;
+    padding: 0px;
+    animation-name: ungrow-nav;
+    animation-duration: .1s;
 }
 .white-background ul li a {
-    color: #333 !important;
+    color: #001F35 !important;
+    border-bottom: solid 1px #001F35;
 }
 
 

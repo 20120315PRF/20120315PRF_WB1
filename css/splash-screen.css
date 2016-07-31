@@ -48,3 +48,15 @@
     font-size: 1.8em;
     letter-spacing: 1em;
 }
+
+
+/** Animation for top nav grow */
+@keyframes ungrow-nav{
+    from { height: 100px; padding: 0px 15px;}
+    to {height: 75px; padding: 0px;}
+}
+
+@keyframes grow-nav{
+    from { height: 100px; padding: 0px;}
+    to {height: 75px; padding: 0px 15px;}
+}

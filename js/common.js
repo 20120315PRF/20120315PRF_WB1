@@ -42,10 +42,14 @@ $(document).on('scroll', function(){
     if(scrollPositionY > 100 && !$('nav').hasClass('white-background')){
         console.log('change element!');
         $('nav').addClass('white-background');
+        $('nav').height('70');
+        $('#logo img').attr('src','img/logo-mini.png');
     }
     else if(scrollPositionY < 100 && $('nav').hasClass('white-background')){
         console.log('change element!');
         $('nav').removeClass('white-background');
+        $('nav').height('100');
+        $('#logo img').attr('src','img/logo4.png');
     }
     
     if(scrollPositionY == 0){
