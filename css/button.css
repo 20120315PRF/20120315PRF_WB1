@@ -19,7 +19,7 @@
 }
 .small-btn:hover{
     text-decoration: none;
-    margin: -1px !important;
+    margin: 0px !important;
 }
 /** Green btn */
 .green-btn{
@@ -54,4 +54,10 @@
     color: white;
     border: solid 1px #337ab7;
     background-color: #337ab7 !important;
+}
+
+#read-more-btn:hover {
+    background-color: #004C82 !important;
+    color: white !important;
+    border-color: transparent !important;
 }

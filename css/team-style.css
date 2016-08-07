@@ -10,7 +10,7 @@ Left column
 #left-col{
     width: 20%;
     float: left;
-    background-color: black;
+    background-color: #004C82;
     color: #DCDCDC;
     position: fixed;
 
@@ -60,7 +60,7 @@ footer{
     height: 200px;
     
     clear: both;
-    background-color: black;
+    background-color: #004C82;
     color: white;
     width: 80%;
     float: right;
@@ -127,8 +127,8 @@ footer{
     padding: .2em;
     border: solid 1px none;
     border-radius: 5px;
-    color: #333;
-    background-color: darkgrey;
+    color: #C9C9C9;
+    background-color: #004C82;
     font-size: 1.6em !important;
 }
 
@@ -153,7 +153,7 @@ footer{
 }
 
 .dark-pannel{
-    background-color: #333;
+    background-color: #004C82;
     color: #DCDCDC;
 }
 

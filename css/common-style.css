@@ -103,9 +103,9 @@ nav .container{
 **
 */
 header {
-    background-image: url('../img/background-img-13.jpg');
+    background-image: url('../img/background-img-15-des.jpg'); 
     /*background-color: #333;*/
-   /* background-color: #001F35; */
+    /*background-color: #001F35; */
     background-size: cover;
     min-height: 650px;
     height: 110%;
@@ -160,7 +160,7 @@ header .content h1{
 **
 */
 article {
-    min-height: 110%;
+    min-height: 95%;
 }
 
 article[class="gold-article"]{
@@ -169,6 +169,11 @@ article[class="gold-article"]{
 
 article[class="blue-article"]{
     background-color: #001F35;
+    color: #C9C9C9;
+}
+
+article[class="semiblue-article"]{
+    background-color: #004C82; 
     color: #C9C9C9;
 }
 
@@ -191,7 +196,7 @@ article section {
 }
 article section h1{
     margin-top: 0px;
-    padding-top: 110px;
+    padding-top: 75px;
     text-align: center;
     font-weight: bold;
 }
@@ -277,15 +282,22 @@ article[id="technical"] section {
 
 .team-profile .team-profile-title{
     font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
-.team-profile .team-profile-title h2,p{
+.team-profile .team-profile-title h2,h4,p{
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 0px;
 }
+.team-profile .team-profile-title h2{
+    color: #004C82;
+}
+
 
 .team-profile-links {
     margin: 15px;
+    min-height: 45px;
 }
 
 .team-profile-links ul li {
@@ -396,10 +408,17 @@ a[class="red-btn"]:hover{
     margin: 0 auto;
     width: 50%;
 }
+/** Blue line separator */
+.blue-line-separator{
+    border-bottom: solid 3px #004C82;
+    margin: 0 auto;
+    width: 50%;
+}
 
 /** Change the bkgnd color to white */
 .white-background{
-    background-color: #F2F1EC;
+    /*background-color: #F2F1EC;*/
+    background-color: rgba(242, 241, 236, 0.7) ;
     padding: 0px;
     animation-name: ungrow-nav;
     animation-duration: .1s;
@@ -449,6 +468,39 @@ img[class="circular"] {
 }
 
 
+/** Icons list */
+.icon-list ul {
+    list-style: none;
+}
+.icon-list ul li {
+    float: left;
+}
+
+
+.icon-list-three-cols ul {
+    width: 100%;
+    margin: 0 auto;
+}
+.icon-list-three-cols ul li{
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+}
+.icon-list-three-cols ul li div{
+    text-align: center;
+    vertical-align: middle;
+}
+.icon-list-three-cols ul li div[class="with-right-separator"]{
+    border-right: solid 1px white;
+}
+
+
+.icon-list-elem {
+    height: 12em;
+    width: 12em;
+    fill: white;
+    background-color: transparent;
+}
 
 
 
