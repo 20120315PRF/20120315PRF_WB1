@@ -35,11 +35,46 @@ function resetWritable (){
     idTimer = setInterval(writeColosseum, 200);
 }
 
+//Animation: fadeIn combined with margin top
+var fadeInWithTopMarginParams = {
+    opacity: 1,
+    marginTop: "50px",
+}
+
+/** Function to execute a function behind the elements of given selector. Execute each function with specified delay */
+function executeEachWithDelay (selector, funcToExec, delayTime){
+    var elementsList = $(selector);
+        if(elementsList.length > 0){
+            var i = 0;
+            var repeatFunction = function(){
+                var elem = $(elementsList[i]);
+                funcToExec(elem);
+                if( ++i < elementsList.length ){
+                    setTimeout(repeatFunction, delayTime);
+                }
+            };
+            repeatFunction();
+    }
+}
+
 /** Scroll effect */
 $(document).on('scroll', function(){
     var scrollPositionY = window.scrollY;
     
-    if(scrollPositionY > 100 && !$('nav').hasClass('white-background')){
+    
+    // Information blocks visibility. Only show this effect if media is not a device
+    if(window.matchMedia('(min-width: 650px)').matches){
+        if(!INFORMATION_IS_VISIBLE && scrollPositionY>100 && scrollPositionY>INFORMATION_POSITION_Y){
+                executeEachWithDelay("#information .icon-list-three-cols li",
+                                    function(icon){
+                    icon.show();
+                    icon.animate(fadeInWithTopMarginParams, 1000);
+                }, 800);
+        }
+    }
+    
+    // Disable the top header effect
+    /*if(scrollPositionY > 100 && !$('nav').hasClass('white-background')){
         console.log('change element!');
         $('nav').addClass('white-background');
         $('nav').height('70');
@@ -50,7 +85,7 @@ $(document).on('scroll', function(){
         $('nav').removeClass('white-background');
         $('nav').height('100');
         $('#logo img').attr('src','img/logo4.png');
-    }
+    }*/
     
     if(scrollPositionY == 0){
         if (document.getElementById("written-text").innerHTML === COLOSSEUM_TEXT){
@@ -67,7 +102,15 @@ $(document).on('scroll', function(){
     
 });
 
+//Information position for scroll +  offset
+    if(window.matchMedia('(min-width: 750px)').matches){
+    var INFORMATION_POSITION_Y = $("#information .icon-list-three-cols").position().top + $("#information .icon-list-three-cols").height() / 2;
+    var INFORMATION_IS_VISIBLE = false;
+    $("#information .icon-list-three-cols li").css('opacity', '0');
+    $("#information .icon-list-three-cols li").hide();
+}
 
+// Techonologies section
 var TECHNOLOGY_POSITION_Y = $('header').height() + $('#information').height() - 200;
 $('#techonologies-items').fadeOut();
 

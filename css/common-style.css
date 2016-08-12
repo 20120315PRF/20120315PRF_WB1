@@ -28,10 +28,12 @@ body {
 **The header navigation 
 **
 */
+/** Change the bkgnd color to white */
 nav {
+    background-color: rgba(242, 241, 236, 0.95) !important;
     min-height: 100px;
     color: #333;
-    padding: 15px 0px;
+    padding: 0px 0px;
     animation-name: grow-nav;
     animation-duration: .1s;
 }
@@ -41,15 +43,10 @@ nav .container{
     margin: 0;
 }
 
-.navbar-default {
-    background-color: transparent;
-    border: none;
-}
-
 .navbar-nav {
     /** options */
-    min-height: 75px;
-    padding-bottom: 15px; /** To fix the height when responsive */
+    min-height: 45px;
+    padding-bottom: 5px; /** To fix the height when responsive */
     float: right;
 }
 
@@ -65,35 +62,32 @@ nav .container{
 
 /** Options for the menu */
 .nav-option a{
-    color: white !important;
-    font-size: 1.2em;
+    color: #001F35 !important;
+    font-size: 1.25em;
     font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 0 1.5em !important;
-    border-bottom: solid 1px white;
 }
 
 .nav-option a:hover{
     background-color: none !important;
     text-decoration: none;
-    /*color: darkred !important;*/
-    /*border-bottom: solid 4px #DC143C;*/
     color: #004C82 !important;
     border-bottom: solid 4px #004C82;
     margin-bottom: -1px;
 }
 
 #logo {
-    min-height: 75px;
-    margin-top: 0px;
+    min-height: 45px;
     padding: 0;
+    padding-top: 5px;
 }
 
 #logo img{
-    height: 75px;
-    max-height: 75px;
+    height: 45px;
+    max-height: 45px;
 }
 
 
@@ -127,7 +121,8 @@ header .content h1{
     height: 5rem; 
     font-size: 4rem;
     margin-bottom: 40px;
-    color: #DC143C; 
+    /*color: #DC143C; */
+    color: #337ab7;
     font-weight: bold;
 }
 

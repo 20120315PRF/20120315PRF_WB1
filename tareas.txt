@@ -1,0 +1,12 @@
+Temas tratados sobre la web (10/08/2016)
+-----------------------------
+
+Fondo: Barra superior no se cambia, se deja fija. Se hace más pequeña en altura. Ya no se vuelve transparente.
+Ver cómo se hace la mierda esa del fondo de bolitas de la página de wings.ai
+
+*Para Semana que viene:
+XEfectos de fadeIn en los iconos
+X Cabecera más pequeña y fija
+Responsive segundo tamaño de ventana/device (media query)
+X Quitar iconos de la izquierda en la imagen principal
+

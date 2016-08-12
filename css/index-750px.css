@@ -1,0 +1,13 @@
+@media (max-width: 750px) {
+    #information{
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .icon-list-three-cols ul li{
+       width: 95%;
+    }
+    .with-right-separator{
+       border-right: none !important;
+    }
+}
