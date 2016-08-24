@@ -97,7 +97,7 @@ nav .container{
 **
 */
 header {
-    background-image: url('../img/background-img-15-des.jpg'); 
+    background-image: url('../img/background-img-15-des.jpg');
     /*background-color: #333;*/
     /*background-color: #001F35; */
     background-size: cover;
@@ -237,8 +237,7 @@ article[id="technical"] section {
 }
 
 #technical {
-    height: 80% !important;
-    min-height: 800px !important;
+    min-height: 80% !important;
     font-size: 1.5em;
 }
 
@@ -289,29 +288,42 @@ article[id="technical"] section {
     color: #004C82;
 }
 
-
 .team-profile-links {
     margin: 15px;
     min-height: 45px;
 }
 
-.team-profile-links ul li {
-    display: inline-block;
-    margin-right: 1em;
-    margin: .5em;
-    font-size: 1.5em;
+/** profile photo and links at bottom to social networks */
+.profile_photo {
+    width: 200px;
+    height: 260px;
+    border: solid 1px #333;
+    box-shadow: 0px 0px 2px #888;
+    margin-bottom: 1em;
 }
 
-.team-profile-links ul li a{
-    color: white;
-    background-color: #333;
-    padding: .2em;
-    border-radius: 5px;
+.team-profile-links ul li{
+    float: left;
+    width: 30% !important;
+    margin: 1.5%;
 }
-.team-profile-links ul li a:hover{
-    background-color: #330;
-    padding: .2em;
-    border-radius: 5px;
+
+.circular_network_link a i{
+    font-size: 1.3em;
+    font-weight: normal !important;
+    color: black;
+    background-color: transparent;
+    padding: .3em;
+    display: inline-block;
+    
+    border-radius: 60px !important;
+    border-width: 4px;
+    border-color: #888;
+    border-style: solid;
+}
+
+.circular_network_link a i:hover{
+    color: #888;
 }
 
 /**
@@ -339,23 +351,57 @@ footer .container{
     margin-right: .5em;
     font-size: 2em;
 }
-#footer-links i{
-    color: black;
+
+/** Footer with color beige */
+footer[class="footer-beige"]{
     background-color: white;
-    padding: .2em;
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #888;
+    border-top: solid 4px #004C82;
+    min-height: 0px;
+    padding: 1em;
 }
 
-#footer-links  li:hover{
+footer[class="footer-beige"] .container{
+    color: #3c3c3c;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer[class="footer-beige"] #footer-links li {
+    margin-right: .5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 1em;
+}
+footer[class="footer-beige"] #footer-links i{
+    color: black;
+    background-color: transparent;
+    padding: .3em;
+    display: inline-block;
+    
+    border-radius: 60px;
+    border-width: 4px;
+    border-color: #888;
+    border-style: solid;
+}
+
+#footer-links  li i:hover{
     transform: scale(1.2) rotate(20deg);
     transition: 0.7s;
 }
-#footer-links  li{
+#footer-links  li i{
     transform: scale(1);
     transition: 0.5s;
 }
+
+li[class="separator"] {
+    content: ' ';
+    padding: .5em 0em;
+    border-right: solid 1px black;
+    transform: rotate(20deg);
+}
+
 
 
 /**
@@ -454,7 +500,7 @@ img[class="circular"] {
 /** Centered div horizontally */
 .centered-div{
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
 }
 
 /** Center a div horizontally */
@@ -471,7 +517,6 @@ img[class="circular"] {
     float: left;
 }
 
-
 .icon-list-three-cols ul {
     width: 100%;
     margin: 0 auto;
@@ -481,6 +526,11 @@ img[class="circular"] {
     width: 30%;
     margin: 1.5%;
 }
+
+
+
+
+
 .icon-list-three-cols ul li div{
     text-align: center;
     vertical-align: middle;

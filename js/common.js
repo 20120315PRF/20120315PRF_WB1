@@ -57,11 +57,11 @@ function executeEachWithDelay (selector, funcToExec, delayTime){
     }
 }
 
+var lastScroll = 0, headerVisible = true;
 /** Scroll effect */
 $(document).on('scroll', function(){
     var scrollPositionY = window.scrollY;
-    
-    
+
     // Information blocks visibility. Only show this effect if media is not a device
     if(window.matchMedia('(min-width: 650px)').matches){
         if(!INFORMATION_IS_VISIBLE && scrollPositionY>100 && scrollPositionY>INFORMATION_POSITION_Y){
@@ -98,7 +98,16 @@ $(document).on('scroll', function(){
         $('#techonologies-items').fadeIn();
     }
     
-    
+    /** Only show the header when on top os scrolling down */
+    if(scrollPositionY < 200 || (scrollPositionY <= lastScroll) ){
+        $('nav').css('opacity', '1');
+        headerVisible = true;
+    }
+    else {
+        $('nav').css('opacity', '0');
+        headerVisible = false;
+    }
+    lastScroll = scrollPositionY;
     
 });
 
