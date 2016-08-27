@@ -198,6 +198,46 @@ article section h1{
 
 /**
 *
+* FEATURES SECTION
+*
+**/
+#features {
+    min-height: 90%;
+    background-color: WhiteSmoke;
+    background-image: url('/img/grid_stripe2.png');
+}
+
+#features-content {
+   width: 80%;
+    margin: 0 auto;
+}
+
+#features-content .feature-icon i{
+    float: left;
+    width: 30%;
+}
+#features-content .feature-icon svg{
+    fill: #001F35;
+    height: 8em !important;
+    width: 8em !important;
+}
+
+.feature-icon .feature-icon-description {
+    float: left;
+    width: 60%;
+}
+
+.feature-icon .feature-icon-description h3{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.feature-icon::after {
+    clear: both;
+}
+
+/**
+*
 *   INFORMATION ARTICLE
 *
 **/
@@ -494,6 +534,20 @@ img[class="circular"] {
 	-moz-border-radius: 150px;
 }
 
+.img-wrapper {
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgba(0,31,53,.15);
+    border-radius: 100%;
+    box-shadow: inset 0 0 7px 0 #001F35;
+    width: 155px;
+	height: 155px;
+    margin: 0 auto;
+}
+
+.icon-wrapper {
+
+}
 /**
 *
 *   list styles
@@ -559,16 +613,13 @@ img[class="circular"] {
     background-image: url('/img/grid_stripe2.png');
     background-color: #fff;
     padding: 1.5em;
-    border: solid 1px white;
+    
     border-radius: 25%;
-    inset 0 0 7px 0 rgba(0,0,0,.08);
     border-width: 8px;
     border-style: solid;
-    border-color: #f8f8f8;
+    border-color: #f8f8f8; 
+    box-shadow: inset 0 0 7px 0 rgba(0,0,0,.08); 
 }
-
-
-
 
 /** Separators */
 #header-separator {
@@ -592,8 +643,36 @@ img[class="circular"] {
     background-image: url('/img/grid_stripe2.png');   
 }
 
+.separator-with-arrow {
+    background-color: transparent;
+    border-top: solid 1px #001F35;
+    width: 85%;
+    margin: 3em auto;
+}
+.separator-with-arrow::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+   
+    background-color: #001F35;
+    left: 50%;
+    transform: rotate(45deg) translate(0, -0.75em);
+    z-index: 1;
+    
+    
+}
 
 
+/**
+* Row with two columns
+**/
+.row-two-cols .column{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 4em;
+}
 
 
 .fill-top-20 {

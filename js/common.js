@@ -40,6 +40,10 @@ var fadeInWithTopMarginParams = {
     opacity: 1,
     marginTop: "50px",
 }
+// Animation: fadeIn for icons
+var fadeInIconsParams = {
+    opacity: 1,
+}
 
 /** Function to execute a function behind the elements of given selector. Execute each function with specified delay */
 function executeEachWithDelay (selector, funcToExec, delayTime){
@@ -69,6 +73,17 @@ $(document).on('scroll', function(){
                                     function(icon){
                     icon.show();
                     icon.animate(fadeInWithTopMarginParams, 1000);
+                }, 800);
+        }
+    }
+    
+    // Features blocks visibility. Only show this effect if media is not a device
+    if(window.matchMedia('(min-width: 650px)').matches){
+        if(!FEATURE_ICONS_IS_VISIBLE && scrollPositionY>100 && scrollPositionY>FEATURE_ICONS_POSITION_Y){
+                executeEachWithDelay(".feature-icon",
+                                    function(icon){
+                    icon.show();
+                    icon.animate(fadeInIconsParams, 350);
                 }, 800);
         }
     }
@@ -117,6 +132,11 @@ $(document).on('scroll', function(){
     var INFORMATION_IS_VISIBLE = false;
     $("#information .icon-list-three-cols li").css('opacity', '0');
     $("#information .icon-list-three-cols li").hide();
+    
+    //FEATURE ICONS -- Hide feature icons  
+    var FEATURE_ICONS_POSITION_Y = $("#features-content").position().top + $("#features-content").height() / 2;
+    var FEATURE_ICONS_IS_VISIBLE = false;
+    $(".feature-icon").css('opacity', '0');
 }
 
 // Techonologies section
