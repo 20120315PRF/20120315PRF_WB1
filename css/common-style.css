@@ -201,6 +201,10 @@ article section h1{
 *   INFORMATION ARTICLE
 *
 **/
+#information {
+    min-height: 80%;
+}
+
 .tab-panel{
     margin: 0 auto;
     width: 80%;
@@ -265,6 +269,13 @@ article[id="technical"] section {
 * TEAM ARTICLE
 *
 **/
+#team {
+    background-color: WhiteSmoke !important;
+    background-image: url('/img/grid_stripe2.png');
+    min-height: 80%;
+    height: 80%;
+}
+
 .team-profile{
     min-height: 150px;
     text-align: center;
@@ -354,7 +365,8 @@ footer .container{
 
 /** Footer with color beige */
 footer[class="footer-beige"]{
-    background-color: white;
+    background-image: url('/img/grid_stripe2.png');
+    background-color: WhiteSmoke;
     border-top: solid 4px #004C82;
     min-height: 0px;
     padding: 1em;
@@ -543,18 +555,42 @@ img[class="circular"] {
 .icon-list-elem {
     height: 12em;
     width: 12em;
-    fill: white;
-    background-color: transparent;
+    fill: #001F35;
+    background-image: url('/img/grid_stripe2.png');
+    background-color: #fff;
+    padding: 1.5em;
+    border: solid 1px white;
+    border-radius: 25%;
+    inset 0 0 7px 0 rgba(0,0,0,.08);
+    border-width: 8px;
+    border-style: solid;
+    border-color: #f8f8f8;
 }
 
 
 
 
-
-
-
-
-
+/** Separators */
+#header-separator {
+    height: 5em;
+    background-color: whitesmoke;
+    background-image: url('/img/grid_stripe2.png');
+    width: 100%;
+    margin: 0 auto;
+}
+#header-separator::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    margin-top: 3em;
+    height: 4em;
+    width: 4em;
+    transform: rotate(45deg);
+    background-color: whitesmoke;
+    background-image: url('/img/grid_stripe2.png');   
+}
 
 
 
