@@ -303,42 +303,6 @@ article[id="technical"] section {
 }
 
 
-
-/**
-*
-* TEAM ARTICLE
-*
-**/
-
-
-.team-profile{
-    min-height: 150px;
-    text-align: center;
-}
-
-.team-profile img{
-    diplay: inline-block;
-}
-
-.team-profile .team-profile-title{
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-.team-profile .team-profile-title h2,h4,p{
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 0px;
-} 
-.team-profile .team-profile-title h2{
-    color: #004C82;
-}
-
-.team-profile-links {
-    margin: 15px;
-    min-height: 45px;
-}
-
 /** profile photo and links at bottom to social networks */
 .profile_photo {
     width: 200px;
@@ -377,21 +341,6 @@ article[id="technical"] section {
 ** FOOTER
 **
 */
-footer{
-    min-height: 150px;
-    /*background-color: black;
-    color: white;*/
-    /*background-color: #363636;*/
-    background-color: #004C82;
-    color: #C9C9C9;
-}
-
-footer .container{
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 
 #footer-links li {
     margin-right: .5em;
@@ -407,40 +356,7 @@ footer[class="footer-beige"]{
     padding: 1em;
 }
 
-footer[class="footer-beige"] .container{
-    color: #3c3c3c;
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 
-footer[class="footer-beige"] #footer-links li {
-    margin-right: .5em;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 1em;
-}
-footer[class="footer-beige"] #footer-links i{
-    color: black;
-    background-color: transparent;
-    padding: .3em;
-    display: inline-block;
-    
-    border-radius: 60px;
-    border-width: 4px;
-    border-color: #888;
-    border-style: solid;
-}
-
-#footer-links  li i:hover{
-    transform: scale(1.2) rotate(20deg);
-    transition: 0.7s;
-}
-#footer-links  li i{
-    transform: scale(1);
-    transition: 0.5s;
-}
 
 li[class="separator"] {
     content: ' ';

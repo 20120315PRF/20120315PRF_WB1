@@ -61,3 +61,79 @@ article[id="team-bootstrap"] section h1 {
     min-height: 45px;
 }
 
+/**
+*
+* FOOTER
+*
+**/
+footer{
+    background-color: #004C82;
+    color: white; 
+    text-align: center;
+}
+
+#footer-bootstrap-body {
+    background-image: url('/img/grid_stripe2.png');
+    background-color: WhiteSmoke;
+    border-top: solid 4px #004C82;
+    min-height: 0px;
+    padding: 1em;
+}
+
+#footer-bootstrap-body .container{
+    color: #3c3c3c;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer-bootstrap-body #footer-links li {
+    margin-right: .5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 1em;
+}
+#footer-bootstrap-body #footer-links i{
+    color: black;
+    background-color: transparent;
+    padding: .3em;
+    display: inline-block;
+    
+    border-radius: 60px;
+    border-width: 4px;
+    border-color: #888;
+    border-style: solid;
+}
+
+#footer-links .col-xs-12{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#footer-links  div i:hover{
+    transform: scale(1.2) rotate(20deg);
+    transition: 0.7s;
+}
+#footer-links  div i{
+    transform: scale(1);
+    transition: 0.5s;
+}
+#footer-links div {
+    font-size: 1.25em;
+}
+
+
+#footer-bootstrap-foot {
+    width: 100%;
+    background-color: #3C3C3C;
+    color: white;
+}
+
+#footer-bootstrap-foot h4{
+    margin: 0;
+    text-align: center;
+    padding: 1.2em;
+    font-style: normal;
+}
+
