@@ -309,12 +309,7 @@ article[id="technical"] section {
 * TEAM ARTICLE
 *
 **/
-#team {
-    background-color: WhiteSmoke !important;
-    background-image: url('/img/grid_stripe2.png');
-    min-height: 80%;
-    height: 80%;
-}
+
 
 .team-profile{
     min-height: 150px;
@@ -334,7 +329,7 @@ article[id="technical"] section {
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 0px;
-}
+} 
 .team-profile .team-profile-title h2{
     color: #004C82;
 }

@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/splash-screen.css" >
         <link rel="stylesheet" href="css/button.css" >
         <link rel="stylesheet" href="css/index-750px.css" >
+        
+        <link rel="stylesheet" href="css/migrate-bootstrap.css" >
     </head>
 
     <body>
@@ -243,18 +245,17 @@
             </section>
         </article>
         <!-- End of information article -->
- 
-        
-        <article id="team" class="white-article">
-            <section>
+          
+          
+        <article id="team-bootstrap" class="container-fluid white-article">
+          <section>
                 <h1 class="article-title">OUR <span style="color: #004C82;">TEAM</span></h1>
                 <div class="blue-line-separator" style="margin-bottom: 25px;"></div>
-            </section>
-                
-                <div class="icon-list icon-list-three-cols" style="padding-top: 1em;">
-                <ul>
-                    <li>
-                        <div class="team-profile center-div" style="width: 80%;" >
+          </section>
+            
+         <div class="row article-content">
+            <div class="col-lg-4 col-xs-12 team-bootstrap-profile">
+                <div class="team-profile center-div" style="width: 80%;" >
                             <div class="img-wrapper">
                                 <img class="circular" src="img/carnet_breixo.png" alt="breixo_profile">
                             </div>
@@ -275,12 +276,12 @@
                             <div class="hidden" style="clear: both; margin-top: 10px;">
                                 <a class="red-btn small-btn" href="#">Visit profile</a>
                             </div>
-                        </div>
-                        
-                    </li>
-                    <!-- End of breixo profile -->
-                    <li>
-                        <div class="team-profile center-div" style="width: 80%;" >
+                </div>
+             </div>
+             <!-- End of breixo profile -->
+             
+             <div class="col-lg-4  col-xs-12 team-bootstrap-profile">
+                <div class="team-profile center-div" style="width: 80%;" >
                             <div class="img-wrapper">
                                 <img class="circular" src="img/carnet_cesar.png" alt="cesar_profile">
                             </div>
@@ -302,12 +303,12 @@
                             <div class="hidden" style="clear: both; margin-top: 10px;">
                                 <a class="blue-btn small-btn" href="#">Visit profile</a>
                             </div>
-                        </div> 
-                    </li>
-                    <!-- End of CGO profile -->
-                    
-                    <li>
-                        <div class="team-profile center-div" style="width: 80%; float: right;" >
+                </div>
+             </div>
+             <!-- End of CGO profile -->
+             
+             <div class="col-lg-4  col-xs-12 team-bootstrap-profile">
+                <div class="team-profile center-div" style="width: 80%;" >
                             <div class="img-wrapper">
                                 <img class="circular" src="img/carnet_lou.png" alt="lou_profile">
                             </div>
@@ -328,20 +329,20 @@
                             <div class="hidden">
                                 <a class="green-btn small-btn" href="/team/team.html?member=lmlouzao">Visit profile</a>
                             </div>
-                        </div>
-                    </li>
-                    <!-- End of CTO profile -->
-                </ul>
                 </div>
+             </div>
                 
-                <div class="clear: both"></div>
-                
-                <div style="min-height: 100px; margin: 0 auto; width: 80%; text-align: center; font-size: 1.5em; padding-bottom: 1em;">
-                    <p>Our young team is composed by a couple of computer engineers and an industrial desginer, looking for making a great community contribution creating the first gaming platform for Lisk. </p>
-                </div>       
-        </article>
- 
+        </div>
+         
+        <div id="team-footer" class="article-footer">
+            <p>Our young team is composed by a couple of computer engineers and an industrial desginer, looking for making a great community contribution creating the first gaming platform for Lisk. </p>
+        </div>  
           
+        </article>
+        <!-- End of team bootstrap -->
+        
+        
+                
        <!-- Technical info -->
           <article id="technical" class="semidark-article">
             <section>

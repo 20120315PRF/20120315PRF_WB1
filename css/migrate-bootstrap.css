@@ -1,0 +1,63 @@
+.article-content {
+    padding-top: 25px;
+}
+
+/**
+*
+* TEAM ARTICLE
+*
+**/
+article[id="team-bootstrap"]{
+    height: auto;
+    min-height: 80%;    
+    background-color: WhiteSmoke !important;
+    background-image: url('/img/grid_stripe2.png');  
+}
+
+article[id="team-bootstrap"] section h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.team-bootstrap-profile {
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.article-footer[id="team-footer"]{
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.team-profile{
+    min-height: 150px;
+    text-align: center;
+}
+
+.team-profile img{
+    diplay: inline-block;
+}
+
+.team-profile .team-profile-title{
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.team-profile .team-profile-title h2,h4,p{
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+} 
+.team-profile .team-profile-title h2{
+    color: #004C82;
+}
+
+.team-profile-links {
+    margin: 15px;
+    min-height: 45px;
+}
+
