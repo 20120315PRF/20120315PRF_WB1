@@ -212,26 +212,6 @@ article section h1{
     margin: 0 auto;
 }
 
-#features-content .feature-icon i{
-    float: left;
-    width: 30%;
-}
-#features-content .feature-icon svg{
-    fill: #001F35;
-    height: 8em !important;
-    width: 8em !important;
-}
-
-.feature-icon .feature-icon-description {
-    float: left;
-    width: 60%;
-}
-
-.feature-icon .feature-icon-description h3{
-    margin-top: 2em;
-    font-weight: bold;
-}
-
 .feature-icon::after {
     clear: both;
 }
@@ -554,6 +534,7 @@ img[class="circular"] {
     background-image: url('/img/grid_stripe2.png');   
 }
 
+/*
 .separator-with-arrow {
     background-color: transparent;
     border-top: solid 1px #001F35;
@@ -573,7 +554,7 @@ img[class="circular"] {
     z-index: 1;
     
     
-}
+}*/
 
 
 /**

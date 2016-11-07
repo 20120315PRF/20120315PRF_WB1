@@ -35,6 +35,7 @@ function resetWritable (){
     idTimer = setInterval(writeColosseum, 200);
 }
 
+
 //Animation: fadeIn combined with margin top
 var fadeInWithTopMarginParams = {
     opacity: 1,
