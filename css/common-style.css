@@ -466,52 +466,6 @@ img[class="circular"] {
 }
 
 
-/** Icons list */
-.icon-list ul {
-    list-style: none;
-}
-.icon-list ul li {
-    float: left;
-}
-
-.icon-list-three-cols ul {
-    width: 100%;
-    margin: 0 auto;
-}
-.icon-list-three-cols ul li{
-    float: left;
-    width: 30%;
-    margin: 1.5%;
-}
-
-
-
-
-
-.icon-list-three-cols ul li div{
-    text-align: center;
-    vertical-align: middle;
-}
-.icon-list-three-cols ul li div[class="with-right-separator"]{
-    border-right: solid 1px white;
-}
-
-
-.icon-list-elem {
-    height: 12em;
-    width: 12em;
-    fill: #001F35;
-    background-image: url('/img/grid_stripe2.png');
-    background-color: #fff;
-    padding: 1.5em;
-    
-    border-radius: 25%;
-    border-width: 8px;
-    border-style: solid;
-    border-color: #f8f8f8; 
-    box-shadow: inset 0 0 7px 0 rgba(0,0,0,.08); 
-}
-
 /** Separators */
 #header-separator {
     height: 5em;

@@ -70,7 +70,7 @@ $(document).on('scroll', function(){
     // Information blocks visibility. Only show this effect if media is not a device
     if(window.matchMedia('(min-width: 650px)').matches){
         if(!INFORMATION_IS_VISIBLE && scrollPositionY>100 && scrollPositionY>INFORMATION_POSITION_Y){
-                executeEachWithDelay("#information .icon-list-three-cols li",
+                executeEachWithDelay("#information .row .bet-icon",
                                     function(icon){
                     icon.show();
                     icon.animate(fadeInWithTopMarginParams, 1000);
@@ -129,10 +129,10 @@ $(document).on('scroll', function(){
 
 //Information position for scroll +  offset
     if(window.matchMedia('(min-width: 750px)').matches){
-    var INFORMATION_POSITION_Y = $("#information .icon-list-three-cols").position().top + $("#information .icon-list-three-cols").height() / 2;
+    var INFORMATION_POSITION_Y = $("#information .row").position().top + $("#information .row").height() / 2;
     var INFORMATION_IS_VISIBLE = false;
-    $("#information .icon-list-three-cols li").css('opacity', '0');
-    $("#information .icon-list-three-cols li").hide();
+    $("#information .row .bet-icon").css('opacity', '0');
+    $("#information .row .bet-icon").hide();
     
     //FEATURE ICONS -- Hide feature icons  
     var FEATURE_ICONS_POSITION_Y = $("#features-content").position().top + $("#features-content").height() / 2;
