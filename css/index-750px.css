@@ -10,4 +10,77 @@
     .with-right-separator{
        border-right: none !important;
     }
+  
+    
+}
+
+
+/**
+* For mobile Phone!
+**/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 670px) { 
+      
+      
+      /** HEADER **/
+      #header-separator {
+        height: 2em;
+      }
+      
+      #header-separator::after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        left: 45%;
+        margin-top: 1em;
+        height: 2em;
+        width: 2em;
+        transform: rotate(45deg);
+        background-color: whitesmoke;
+        background-image: url('/img/grid_stripe2.png');
+      }
+      
+      /** BET ON YOURSELF SECTION */
+      .col-content-80 h1{
+            font-size: 2em !important;
+        }
+ 
+    /** FEATURE SECTION **/
+    .feature-icon{
+        float: none !important;
+        font-size: 1.75em !important;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+   
+    /** TEAM SECTION **/
+    #team-footer p{
+            font-size: 1.2em;
+    }
+    .team-profile-description p{
+        font-size: 1.1em;
+        margin-top: .3em;
+    }
+      
+      /** FOOTER SECTION **/
+      footer {
+        text-align: left !important;
+      }
+      #footer-bootstrap-body .container{
+            text-align: left !important;
+            width: 60%;
+        }
+      
+    #footer-links div {
+        font-size: 1.7em !important;
+    }
+      #footer-bootstrap-body .container .container-center{
+            width: 50% !important;
+        }
+
+
 }

@@ -67,7 +67,9 @@ nav .container{
 /** Options for the menu */
 .nav-option a{
     color: #001F35 !important;
-    font-size: 1.25em;
+    
+    font-size: 1.5em;
+    
     font-weight: bold;
     letter-spacing: 4px;
     text-align: center;
@@ -286,39 +288,6 @@ article[id="technical"] section {
     display: inline-block;
 }
 
-
-/** profile photo and links at bottom to social networks */
-.profile_photo {
-    width: 200px;
-    height: 260px;
-    border: solid 1px #333;
-    box-shadow: 0px 0px 2px #888;
-    margin-bottom: 1em;
-}
-
-.team-profile-links ul li{
-    float: left;
-    width: 30% !important;
-    margin: 1.5%;
-}
-
-.circular_network_link a i{
-    font-size: 1.3em;
-    font-weight: normal !important;
-    color: black;
-    background-color: transparent;
-    padding: .3em;
-    display: inline-block;
-    
-    border-radius: 60px !important;
-    border-width: 4px;
-    border-color: #888;
-    border-style: solid;
-}
-
-.circular_network_link a i:hover{
-    color: #888;
-}
 
 /**
 **

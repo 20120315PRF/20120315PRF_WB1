@@ -30,10 +30,14 @@ article[id="team-bootstrap"] section h1 {
     margin-bottom: 25px;
     width: 80%;
     text-align: center;
-    font-size: 1.5em;
+}
+
+.article-footer[id="team-footer"] p{
+    font-size: 1.4em;
 }
 
 .team-profile{
+    width: 80%;
     min-height: 150px;
     text-align: center;
 }
@@ -56,9 +60,54 @@ article[id="team-bootstrap"] section h1 {
     color: #004C82;
 }
 
+.team-profile-description p{
+    font-size: 1.2em;
+}
+
 .team-profile-links {
     margin: 15px;
     min-height: 45px;
+}
+
+/** profile photo and links at bottom to social networks */
+.profile_photo {
+    width: 200px;
+    height: 260px;
+    border: solid 1px #333;
+    box-shadow: 0px 0px 2px #888;
+    margin-bottom: 1em;
+}
+
+.team-profile-links ul li{
+    text-align: center !important;
+    float: left;
+    margin: 1.5%;
+}
+
+.three-elems li{
+    width: 25% !important;
+}
+
+.two-elems li{
+    width: 40% !important;
+}
+
+.circular_network_link a i{
+    font-size: 1.3em;
+    font-weight: normal !important;
+    color: black;
+    background-color: transparent;
+    padding: .3em;
+    display: inline-block;
+    
+    border-radius: 60px !important;
+    border-width: 4px;
+    border-color: #888;
+    border-style: solid;
+}
+
+.circular_network_link a i:hover{
+    color: #888;
 }
 
 /**
@@ -87,6 +136,12 @@ footer{
     margin: 0 auto;
     text-align: center;
 }
+
+#footer-bootstrap-body .container .container-center{
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 #footer-bootstrap-body #footer-links li {
     margin-right: .5em;
@@ -149,6 +204,11 @@ footer{
     padding-bottom: 2em;
 }
 
+.feature-icon{
+    float: left;
+    font-size: 1.4em;
+}
+
 .feature-icon i{
     float: left;
     width: 50%;
@@ -160,14 +220,7 @@ footer{
     width: 8em !important;
 }
 
-.feature-icon-description {
-    float: left;
-    width: 50%;
-    /*text-align: center; */
-    margin-left: 2em;
-}
-
-.feature-icon-description h3{
+.feature-icon-description {   
     margin-top: 2em;
     font-weight: bold;
 }
@@ -213,6 +266,10 @@ Bet on yourself section
     width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+.col-content-80 h1,p{
+    font-size: 3vw;
 }
 
 .bet-icon .icon-wrapper{
